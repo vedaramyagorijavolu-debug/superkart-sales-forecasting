@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 7860
 
 # Start Gunicorn serving Flask instance `superkart_api` from `app.py`
-CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5000", "app:superkart_api"]
+CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:7860", "app:superkart_api"]
