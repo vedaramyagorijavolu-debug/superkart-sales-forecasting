@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose Flask/Gunicorn port
-EXPOSE 5000
+EXPOSE 7860
 
 # Start Gunicorn serving Flask instance `superkart_api` from `app.py`
 CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5000", "app:superkart_api"]
